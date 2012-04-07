@@ -1,0 +1,381 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta http-equiv="Content-Language" content="vi"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Website chuyên cung cấp các dịch vụ vận chuyển hàng hóa an toàn, chất lượng và uy tín."/>
+    <meta name="Abstract" content="Vận chuyển hàng hóa, vật phẩm, đồ dùng."/>
+    <meta name="Author" content="An Hoai Vo, Lam Vu Pham, hoaian.uit@gmail.com"/>
+    <meta name="copyright" content="Bản quyền © 2012 Công ty TNHH TM-DV xây dựng vận tải Thiên Việt"/>
+    <meta name="Designer" content="LamPV"/>
+    <meta name="keywords" content="vận chuyển,hàng hóa, vận tải, xe chuyên chở, m3, mét sàn, kg, vận chuyển hàng hóa, vận chuyển vật phẩm, chuyên chở, đường xa,"/>
+
+    <title>
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Main.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css"  media="screen" />
+
+    <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="Scripts/jquery.betterTooltip.js"></script>
+    <script type="text/javascript" src="Scripts/crawler.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.lightbox-0.5.js"></script>
+
+    <script src="http://cdn.wibiya.com/Toolbars/dir_1163/Toolbar_1163709/Loader_1163709.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        var switchTo5x = true;
+        $(function () {
+            $('#gallery a').lightBox();
+        });
+
+    </script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">        stLight.options({ publisher: "cbd4bc38-0fa7-4790-9919-d6fb3f4f429a" }); </script>
+</head>
+<body>
+
+    <form id="Form1" runat="server">
+        <table width="80%" border="0" align="center" cellspacing="0" cellpadding="0" style="background-color:#e9e6d3">
+
+            <!-- Menu ----------------------------------------------------------------------------------------------->
+            <tr valign="top">
+                <td align="left">
+                    <div style="background-image: url(Images/left_menu.png); height:71px;width:91px;margin-left:-90px;margin-top:26px"></div>
+                </td>
+                <td width="100%">
+                    <div class="menu">
+                        <table align="center" cellpadding="0" cellspacing="0" border="0" style="padding-top: 20px">
+                            <tr>
+                                <td>
+                                    <a href="Default.aspx" target="_blank">Trang Chủ</a>
+                                </td>
+                                <td width="60px" align="center">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    <a href="Services.aspx" target="_blank">Dịch Vụ</a>
+                                </td>
+                                <td width="60px" align="center">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    <a href="List.aspx" target="_blank">Tin Tức</a>
+                                </td>
+                                <td width="60px" align="center">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    <a href="ImagesLibrary.aspx" target="_blank">Thư Viện</a>
+                                </td>
+                                <td width="60px" align="center">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    <a href="Contact.aspx" target="_blank">Liên Hệ</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td align="right" width="1px">
+                    <div style="background-image: url(Images/right_menu.png); height:71px;width:91px;margin-right:-90px;margin-top:26px"></div>
+                </td>
+            </tr>
+
+            <!-- Logo ----------------------------------------------------------------------------------------------->
+            <tr>
+                <td align="center" colspan="3" class="style1">
+                    <div style="margin-bottom: 50px; margin-top: 50px">
+                        <img src="Images/Logo.png" alt="logo" width="550" />
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Main menu ------------------------------------------------------------------------------------------>
+            <tr>
+                <td colspan="3">
+                    <div style="margin-bottom: 25px;height:160px">
+                        <table align="center" height='200px'>
+                            <tr>
+                                <td align='center' width='150px'>
+                                    <a href="Default.aspx" target="_blank">
+                                        <div class="menu_item i_1"  title="Giới thiệu công ty Thiên Việt.">
+                                        </div>
+                                    </a>
+                                </td>
+                                <td width="40px" align="center" >
+                                    &nbsp;
+                                </td>
+                                <td align='center' width='160px'>
+                                    <a href="Services.aspx" target="_blank">
+                                        <div class="menu_item i_2"  title="Hướng dẫn tính cước phí vận chuyển.">
+                                        </div>
+                                    </a>
+                                </td>
+                                <td width="40px" align="center">
+                                    &nbsp;
+                                </td>
+                                <td align='center' width='160px'>
+                                    <a href="Service.aspx" target="_blank">
+                                        <div class="menu_item i_3"  title="Xem thông tin báo giá.">
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Company infomation ---------------------------------------------------------------------------------------->
+            <tr>
+                <td>
+                </td>
+                <td class="company_info" width="600">
+                    <div style='background-color: White; padding: 20px;border-radius:10px;border:2px solid #acb6ba'>
+                       <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </div>
+                </td>
+                <td>
+                </td>
+            </tr>
+
+            <!-- Slide show ------------------------------------------------------------------------------------------------>
+            <tr>
+                <td colspan="3" align='center' style='padding:0px 30px 0px 30px'>
+                    <div style="border-radius: 10px;border:2px solid #acb6ba;background-color:white;height:150px">
+                    <div class="marquee" id="mycrawler" style="padding-left:20px;padding-right:20px;">
+                        
+                            <table>
+                                <tr valign="middle">
+                                <%
+                                    string strImages = getImageList();
+                                    string[] arrImages = strImages.Split(',');
+
+                                    for(int i = 0; i < arrImages.Length - 1; i++)
+                                    {
+                                        %>
+                                            <td>
+                                                <div id="gallery">
+                                                    <a href="<%=arrImages[i] %>" rel="lightbox">
+                                                        <div style="background-image: url(<%=arrImages[i] %>);width:175px;height:100px" class='slide_image'></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            
+
+                                        <%
+                                    }
+                                %>
+                                </tr>
+                            </table>
+                     
+                    </div>
+                    </div>
+                </td>
+            </tr>
+            <tr height='20px'>
+                <td></td>
+            </tr>
+        </table>
+
+        <!-- Footer ---------------------------------------------------------------------------------------------------->
+        <table width="100%">
+            <tr align="center">
+                <td colspan="3" height="1" bgcolor="black">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3" bgcolor="#88250e" height="50">
+                    <div class="footer_bg">
+                        <div class="footer" id='footer'>
+                            Bản quyền © 2012 Công ty TNHH TM-DV xây dựng vận tải Thiên Việt. Công ty THIÊN VIỆT - Đ/C: Z11, QL 1A, Block 2, P. Trung Mỹ Tây, Q.12, Tp. Hồ Chí Minh, Việt Nam.
+                            ĐT: (+84)8 - 66 847 867, (+84)933 899 611, (+84)909 494 201<br/>
+                            Website: <a href="vanchuyenhang.com.vn" target="_blank">vanchuyenhang.com.vn</a>  
+                                     <a href="www.vanchuyenhanghoa.com.vn" target="_blank">www.vanchuyenhanghoa.com.vn</a><br/>
+                            Email: Thienvietltd@gmail.com</br>
+                         </div>
+                         <div class="designer">
+                            <a href="#"><i>Designed by: AnVH - LamPV</i></a>
+                         </div>
+                     </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    
+        <!-- side banner ----------------------------------------------------------------------------------------->
+        <div class='banner_side' id='banner_side'>
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style" style='text-align:center;'>
+               <table cellspacing="0" cellpadding="0" border="0" width='100%'>
+                    <tr align='center' height='36px'>
+                        <td nowrap="nowrap" valign="top" align='center'>
+                            <div style='text-align:center; width='100%''>
+                               <!-- AddThis Button BEGIN -->
+                                <a class="addthis_button_preferred_1"></a>
+                            </div>
+                            <br/>
+                        </td>
+                    </tr>
+                    
+                    <tr align='center' height='36px'> 
+                        <td nowrap="nowrap" valign="top" align='center'>
+                           <!-- AddThis Button BEGIN -->
+                            <div style='text-align:center; width='100%''>
+                                <a class="addthis_button_preferred_2"></a>
+                            </div>
+                             </br>
+                        </td>
+                    </tr>
+                    <tr align='center' height='36px'>
+                        <td nowrap="nowrap" valign="top" align='center'>
+                             <div style='text-align:center; width='100%''>
+                                <!-- AddThis Button BEGIN -->
+                                <a class="addthis_button_compact"></a>
+                            </div>
+                            </br>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <hr/>
+                        <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+                        <a href="skype:thienvietcompany?call" target="_blank">
+                            <img src="http://download.skype.com/share/skypebuttons/buttons/call_blue_transparent_34x34.png" style="border: none;" width="34" height="34" alt="Skype Me™!" />
+                        </a>
+                        <!-- <a href="mailto:?subject=">
+                            <img height="27" border="0" width="27" src="images/mail.gif"/>
+                        </a>
+                        -->
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <a href='ymsgr:sendIM?nangsantruong_199' target="_blank">
+                            <img alt='' height="20" border="0" width="20" border=0 src='http://opi.yahoo.com/online?u=nangsantruong_199&m=g&t=5' /> 
+                        </a>
+                    </td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f6ec4fe1d4c7b05"></script>
+        <!-- AddThis Button END -->
+
+
+    <!-- script functions --------------------------------------------------------------------->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            MainContentW = 1000;
+            LeftBannerW = 15;
+            RightBannerW = 15;
+            LeftAdjust = 5;
+            RightAdjust = 5;
+            TopAdjust = $(window).height() / 2 - 90;
+            
+            function FloatTopDiv() {
+                startLX = 0, startLY = TopAdjust;
+                var d = document;
+
+                function m2(id) {
+                    var e2 = d.getElementById ? d.getElementById(id) : d.all ? d.all[id] : d.layers[id];
+                    e2.sP = function (x, y) { this.style.left = x + 'px'; this.style.top = y + 'px'; };
+                    e2.x = startLX;
+                    e2.y = startLY;
+                    return e2;
+                }
+                window.stayTopLeft = function () {
+                    if (document.documentElement && document.documentElement.scrollTop)
+                        var pY = document.documentElement.scrollTop;
+                    else if (document.body)
+                        var pY = document.body.scrollTop;
+                    startLY = TopAdjust; startRY = TopAdjust;
+                    ftlObj2.y += (pY + startLY - ftlObj2.y) / 16;
+                    ftlObj2.sP(ftlObj2.x, ftlObj2.y-30);
+                    
+                    setTimeout("stayTopLeft()", 1);
+                }
+
+                ftlObj2 = m2("banner_side");
+                stayTopLeft();
+            }
+            FloatTopDiv();
+
+            // add event for mouse over and mouse out
+            $('.menu_item').mouseover(function () {
+                $(this).animate({
+                    bottom: '+=20'
+                }, 0, function () {
+                    // Animation complete.
+                });
+            });
+
+            $('.menu_item').mouseout(function () {
+                $(this).animate({
+                    bottom: '-=20'
+                }, 0, function () {
+                    // Animation complete.
+                });
+
+            });
+
+            $('.menu_item').betterTooltip({ speed: 150, delay: 300 });
+
+        });
+
+        //this function simply gets the window scroll position, works in all browsers
+        function getPageScroll() {
+            var yScroll;
+            if (self.pageYOffset) {
+                    yScroll = self.pageYOffset;
+            } else if (document.documentElement && document.documentElement.scrollTop) {
+                yScroll = document.documentElement.scrollTop;
+            } else if (document.body) {
+                yScroll = document.body.scrollTop;
+            }
+            return yScroll;
+        }
+
+        function getQuerystring(key, default_)
+        {
+          if (default_==null) default_=""; 
+          key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+          var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
+          var qs = regex.exec(window.location.href);
+          if(qs == null)
+            return default_;
+          else
+            return qs[1];
+        }
+
+       //marquee images
+    marqueeInit({
+        uniqueid: 'mycrawler',
+        style: {
+            'padding': '10px',
+            'width': '900px',
+            'height': '110px'
+        },
+        inc: 4, //speed - pixel increment for each iteration of this marquee's movement
+        mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+        moveatleast: 2,
+        neutral: 150,
+        savedirection: true,
+        random: true
+    });
+    </script>
+
+</body>
+</html>
+

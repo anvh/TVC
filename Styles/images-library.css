@@ -1,0 +1,77 @@
+/* CSS Document */
+body{
+    background-color:#000000;
+}
+.menu{
+	background-image:url('../Images/menu_nav.png');
+	height:55px;
+	width:100%;
+}
+.menu a:hover{
+    color:#b2bb55;
+}
+.menu a{
+    color:White;
+    text-decoration:none;
+	font-weight:bold;
+}
+.circle{
+	border: 2px solid #a1a1a1;
+	padding: 10%;
+	background: #dddddd;
+	width: 150px;
+	height: 100px;
+	border-radius: 60%;
+}
+.company_info{
+    /*background: none repeat scroll 0 0 #FFFFFF;*/
+    border-color: #000000;
+    /*border-radius: 100px 0 0 0;*/
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding: 48px 10px 10px 30px;
+    min-height:680px;
+}
+.slide_show{
+	border: 0px solid #fdfdfd;
+	height: 150px; 
+	margin-left: 90px; 
+	margin-right: 90px; 
+	margin-top:20px
+}
+.album_border{
+    border: 5px solid #fdfdfd; height: 108px; 
+    border-radius: 10px; width: 175px;
+    cursor:pointer;
+}
+.list_album{
+    padding-left:135px;
+    padding-right:100px;
+    padding-bottom:35px;
+}
+
+.footer{
+    text-align:center;
+    width:900px;
+    font-size:13px;
+}
+.footer a:hover{
+    color:#FFA500;
+}
+.footer a{
+    color:#FFFFFF;
+}
+
+.designer{
+    text-align:right;
+    font-size:9px;
+}
+.designer a{
+    color:#b2bb55;
+}
+.designer a:hover{
+    color:#FFA500;
+}
+.footer_bg{
+    background-image:url('../Images/footer_bottom.png');
+}
