@@ -20,7 +20,7 @@ Trang chủ
 </tr>
 <tr>
     <td colspan='2'>
-        Giới thiệu công ty Thiên Việt!
+        <asp:Label ID="content" runat="server" Text=""></asp:Label>
     </td>
 </tr>
 </table>

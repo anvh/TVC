@@ -72,7 +72,6 @@ public partial class Controls_Mail_Form : System.Web.UI.UserControl
         try
         {
             SendEmail(sender_addr, pass, admin_addr, subject.Text, body, MailFormat.Text, "");
-
             show_info.Text = "Đã gửi mail thành công!";
         }
         catch (Exception ex) { show_info.Text = "Lỗi! Bạn vui lòng gửi trực tiếp vào hộp thư " + admin_addr; }

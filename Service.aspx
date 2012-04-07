@@ -4,6 +4,20 @@
 Báo giá
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
-Nội dung báo giá
+<table width="100%" style='font-size:11pt'>
+<tr>
+    <td colspan='2'>
+        <div style='font-size:20px;color:red;font-weight:bold;text-align:left;'>
+            Báo giá
+        </div>
+        <hr/>
+    </td>
+</tr>
+<tr>
+    <td colspan='2'>
+        <asp:Label ID="content" runat="server" Text=""></asp:Label>
+    </td>
+</tr>
+</table>
 </asp:Content>
 

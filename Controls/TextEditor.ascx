@@ -26,9 +26,8 @@
             alert("Thiếu ảnh mô tả!");
             return false;
         } else file.borderColor = '';
-        
-        return true;
 
+        return true;
     }
 </script>
 <table width="100%">
@@ -38,9 +37,9 @@
         </td>
         <td width="70%" >
             <asp:TextBox ID="title" runat="server" style="width:100%"></asp:TextBox>
-            
         </td>
         <td align='right'>
+            
             <asp:Button ID="post" runat="server" Text="Post bài >>" 
                 style='font-weight:bold;' onclick="post_Click" OnClientClick='return check_valid();'/>
         </td>
@@ -57,6 +56,7 @@
         <td style="font-weight:bold">
             Sơ lược:
         </td>
+        
         <td colspan='2'>
             <asp:TextBox ID="summary" runat="server" Width="99%" Rows="5" TextMode="MultiLine"></asp:TextBox>
         </td>
@@ -73,17 +73,27 @@
         <td style="font-weight:bold">
             Bài cũ:
         </td>
-        <td align='left' colspan='2'>
+        <td align='left'>
             <asp:DropDownList ID="DropDownList1" runat="server" 
-                DataSourceID="SqlDataSource2" DataTextField="Title" DataValueField="Id"></asp:DropDownList> 
+                DataSourceID="SqlDataSource2" DataTextField="Title" DataValueField="Id" style='width:80%'></asp:DropDownList> 
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
                 ConnectionString="<%$ ConnectionStrings:ApplicationServices %>" 
-                SelectCommand="SELECT top 20 [Id], [Title] FROM [News] ORDER BY ID DESC"></asp:SqlDataSource>
+                SelectCommand="SELECT top 20 [Id], [Title] FROM [News] WHERE ID >= 0 ORDER BY ID DESC"></asp:SqlDataSource>
             <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" OnClientClick='return confirm("Bạn có chắc muốn xóa bài này không ?")'>Delete</asp:LinkButton>/
             <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton1_Edit" >Edit</asp:LinkButton>
             <span style='color:red'>
                 <asp:Literal ID="show_info" runat="server"></asp:Literal>
             </span>
+        </td>
+        <td>
+            <asp:RadioButtonList ID="Select_Item" runat="server" RepeatDirection="Horizontal" OnSelectedIndexChanged="selected_index_changed" AutoPostBack="true">
+                <asp:ListItem Text="GThiệu" Selected="False">
+                </asp:ListItem>
+                <asp:ListItem Text="BGiá" Selected="False">
+                </asp:ListItem>
+                <asp:ListItem Text="New" Selected="True">
+                </asp:ListItem>
+            </asp:RadioButtonList>
         </td>
     </tr>
 </table>

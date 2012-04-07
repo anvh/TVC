@@ -18,6 +18,7 @@ public partial class TextEditor : System.Web.UI.UserControl {
     //***********************************************************
     protected void post_Click(object sender, EventArgs e)
     {
+
         Session["State"] = "1";
         if (title.Text.Trim() == "") return;
 
@@ -60,6 +61,7 @@ public partial class TextEditor : System.Web.UI.UserControl {
                 title.Text = "";
                 description.Text = "";
                 summary.Text = "";
+                Select_Item.SelectedIndex = 2;
 
                 DropDownList1.DataBind();
 
@@ -70,7 +72,10 @@ public partial class TextEditor : System.Web.UI.UserControl {
                 }
             }
             else {
-                string id = DropDownList1.SelectedValue;
+                int index = Select_Item.SelectedIndex;
+                string filter = (index == 0) ? "-1" : "-2";
+
+                string id = index != 2 ? filter : DropDownList1.SelectedValue;
                 string command = (file_url == "") ? "update News set title = @title,description = @description,content = @content where id = @id"
                                                   : "update News set title = @title,description = @description,content = @content,image = @image where id = @id";
                 using (SqlCommand scom = new SqlCommand(command, scon))
@@ -91,6 +96,7 @@ public partial class TextEditor : System.Web.UI.UserControl {
                 description.Text = "";
                 summary.Text = "";
                 post.Text = "Post bài >>";
+                Select_Item.SelectedIndex = 2;
 
                 // return successful info
                 if (!Page.ClientScript.IsStartupScriptRegistered(this.GetType(), info))
@@ -105,6 +111,7 @@ public partial class TextEditor : System.Web.UI.UserControl {
     protected void LinkButton1_Click(object sender, EventArgs e)
     {
         Session["State"] = "1";
+        Select_Item.SelectedIndex = 2;
         using (SqlConnection scon = new SqlConnection
         (System.Configuration.ConfigurationManager.ConnectionStrings["ApplicationServices"].ToString()))
         {
@@ -131,6 +138,38 @@ public partial class TextEditor : System.Web.UI.UserControl {
                 show_info.Text = "   --> Lỗi: " + ex.Message;
             }
 
+        }
+    }
+
+    protected void selected_index_changed(object sender, EventArgs e)
+    {
+        Session["State"] = "1";
+        int index = Select_Item.SelectedIndex;
+        if (index == 2) return;
+        string filter = index == 0 ? "-1" : "-2";
+
+        using (SqlConnection scon = new SqlConnection
+        (System.Configuration.ConfigurationManager.ConnectionStrings["ApplicationServices"].ToString()))
+        {
+            scon.Open();
+            try
+            {
+                using (SqlCommand scom = new SqlCommand("Select title,description,image,content from News where id = @id", scon))
+                {
+                    scom.Parameters.Add(new SqlParameter("@id",filter));
+                    SqlDataReader sreader = scom.ExecuteReader();
+                    sreader.Read();
+                    title.Text = sreader.GetValue(0).ToString();
+                    description.Text = sreader.GetValue(1).ToString();
+                    summary.Text = sreader.GetValue(3).ToString();
+                    post.Text = "Save";
+                }
+                DropDownList1.DataBind();
+            }
+            catch (Exception ex)
+            {
+                show_info.Text = "   --> Lỗi: " + ex.Message;
+            }
         }
     }
 
