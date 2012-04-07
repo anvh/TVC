@@ -64,7 +64,7 @@ public partial class Controls_Mail_Form : System.Web.UI.UserControl
 
     protected void send_mail(object sender, EventArgs e)
     {
-        string admin_addr = "Thienvietltd@gmail.com";
+        string admin_addr = "ceo@vanchuyenhang.com.vn";
         string sender_addr = "admin@vanchuyenhang.com.vn";
         string pass = "thienvietco";
         string body = string.Format("{0} - {1} ({2}):\n{3}", DateTime.Now.ToLocalTime(), name.Text, email.Text, content.Text);
