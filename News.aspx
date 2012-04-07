@@ -28,14 +28,14 @@ Tin tức
                         <tr>
                             <td width="200" rowspan="3">
                                 <div class='frame'>
-                                      <a target="_blank" href="news-<%# Eval("id")%>-<%# Server.HtmlDecode(Eval("Title") as string).Replace(" ","+")  %>" style="color:Black;">
+                                     <a target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;">
                                         <img src="<%# Server.HtmlDecode(Eval("Image") as string) %>" width="190px" height="140px">	
                                     </a>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                             </td>
                             <td width="10px"></td>
                             <td height="6px" valign="top" style="font-size:13pt;font-weight:bold;">
-                                 <a target="_blank" href="news-<%# Eval("id")%>-<%# Server.HtmlDecode(Eval("Title") as string).Replace(" ","+")  %>" style="color:Black;">
+                               <a target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;">
                                     <%# Server.HtmlDecode(Eval("Title") as string) %>
                                 </a>
                             </td>
@@ -52,7 +52,7 @@ Tin tức
                         <tr>
                             <td></td>
                             <td valign="bottom" align=right>
-                                <div style='margin-top:-5px;margin-bottom:-5px;'>...  <a target="_blank" href="Detail.aspx?id=<%# Eval("id")%>&title=<%# Server.HtmlDecode(Eval("Title") as string).Replace(" ","+")  %>" style="color:Black;"> Chi tiết</a></div>
+                                <div style='margin-top:-5px;margin-bottom:-5px;'>... <a target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;"> Chi tiết</a></div>
                                 <hr/>
                             </td>
                         </tr>

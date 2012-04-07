@@ -12,7 +12,7 @@
     <meta name="copyright" content="Bản quyền © 2012 Công ty TNHH TM-DV xây dựng vận tải Thiên Việt"/>
     <meta name="Designer" content="LamPV"/>
     <meta name="keywords" content="van chuyen hang, van chuyen hang hoa, cong ty van tai, cong ty van chyen, dich vu van chuyen, van tai,
-                                   vận chuyển hàng, vận chuyển hàng hóa, công ty vẩn tải, công ty vận chuyển, dịch vụ vận chuyển, vận tải"/>
+                                   vận chuyển hàng, vận chuyển hàng hóa, công ty vận tải, công ty vận chuyển, dịch vụ vận chuyển, vận tải"/>
 
     <title>
         <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>

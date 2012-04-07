@@ -6,11 +6,8 @@ body{
 
 a{
  text-decoration:none;
- color:orange;
 }
-a:hover{
-color:#FF8C00
-}
+
 .menu{
 	background-image:url('../Images/menu_nav.png');
 	height:55px;

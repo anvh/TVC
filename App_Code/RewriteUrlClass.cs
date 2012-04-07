@@ -23,14 +23,12 @@ public class RewriteUrlClass : IHttpModule
         string url = httpApplication.Request.RawUrl.ToLower();
 
         // Nếu là Url ảo như sau"
-        if (url.Contains("/news"))
+        if (url.Contains("-new.aspx"))
         {
 
-            string[] temp = url.Split('-');
-            temp = url.Split('/');
+            string[] temp = url.Split('/');
             temp = temp[temp.Length-1].Split('-');
-            string id = temp[0].Split('?')[1];
-
+            string id = temp[temp.Length - 2];
             httpApplication.Context.RewritePath("Detail.aspx?id=" + id);
         }
 
