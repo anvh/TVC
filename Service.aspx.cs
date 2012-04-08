@@ -18,7 +18,7 @@ public partial class Service_1 : System.Web.UI.Page
             {
                 using (SqlCommand scom = new SqlCommand("Select description from News where id = -2", scon))
                 {
-                    SqlDataReader sreader = scom.ExecuteReader();
+                    //SqlDataReader sreader = scom.ExecuteReader();
                     sreader.Read();
                     content.Text = sreader.GetValue(0).ToString();
                 }

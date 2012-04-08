@@ -175,3 +175,35 @@ a{
     -webkit-background-size: 100% 100%; 
     background-size: 100% 100%;
 }
+
+.footer_s
+{
+    background: url("../Images/gradient_alt2.gif") repeat-x scroll left top #E7E9EF;
+    border-bottom: 1px solid #849F9A;
+    border-left: 1px solid #849F9A;
+    border-right: 1px solid #849F9A;
+    height: 63px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.slide
+{
+    border-radius:10px;
+    border:2px solid #acb6ba;
+    background-color:white;
+    height:150px;
+    background: url("../Images/nav.png") repeat-x scroll left top #E7E9EF;
+    border-bottom: 1px solid #849F9A;
+    border-left: 1px solid #849F9A;
+    border-right: 1px solid #849F9A;
+}
+
+.footer_t
+{
+    background: url("../Images/a.png") repeat-x scroll left top transparent;
+    height: 22px;
+    width: 1260px;
+    position: absolute;
+    margin-top: -19px;
+    margin-left: 6px;
+}

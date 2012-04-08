@@ -139,9 +139,11 @@
                 <td>
                 </td>
                 <td class="company_info" width="600">
-                    <div style='background-color: White; padding: 20px;border-radius:10px;border:2px solid #acb6ba'>
+                    <div class='footer_t'></div>
+                    <div style='background-color: White; padding: 20px;border-radius:10px 10px 0px 0px;border:2px solid #acb6ba;border-bottom:0px'>
                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
                     </div>
+                    <div class="footer_s"></div>
                 </td>
                 <td>
                 </td>
@@ -150,7 +152,7 @@
             <!-- Slide show ------------------------------------------------------------------------------------------------>
             <tr>
                 <td colspan="3" align='center' style='padding:0px 30px 0px 30px'>
-                    <div style="border-radius: 10px;border:2px solid #acb6ba;background-color:white;height:150px">
+                    <div class='slide'>
                     <div class="marquee" id="mycrawler" style="padding-left:20px;padding-right:20px;">
                         
                             <table>
