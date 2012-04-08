@@ -51,7 +51,7 @@ $.fn.betterTooltip = function(options){
 		$this.hover(
 			function() {
 				tipInner.html(tTitle);
-				setTip(tTop+25, tLeft);
+				setTip(tTop, tLeft);
 				setTimer();
 			}, 
 			function() {
@@ -74,7 +74,7 @@ $.fn.betterTooltip = function(options){
 		setTip = function(top, left){
 			var topOffset = tip.height();
 			var xTip = (left-30)+"px";
-			var yTip = (top-topOffset-60)+"px";
+			var yTip = (top-topOffset-40)+"px";
 			tip.css({'top' : yTip, 'left' : xTip});
 		}
 		
@@ -82,7 +82,7 @@ $.fn.betterTooltip = function(options){
 		   fade-in animation                          */
 		showTip = function(){
 			stopTimer();
-			tip.animate({"top": "+=20px", "opacity": "toggle"}, defaults.speed);
+			tip.animate({"top": "-=15px", "opacity": "toggle"}, defaults.speed);
 		}
 	});
 };
