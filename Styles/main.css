@@ -160,18 +160,18 @@ a{
 .footer_bg_left{
     background-image:url('../Images/left_bottom.png');
     height:6px;
-    margin-left:6px;
+    width:6px;
     background-repeat:repeat-y;
 }
 .footer_bg_left_bottom{
     background-image:url('../Images/left.png');
-    height:178px;
-    margin-left:6px;
+    height:187px;
+    width:6px;
     background-repeat:repeat-y;
 }
 .footer_bg_right_bottom{
     background-image:url('../Images/right.png');
-    height:178px;
+    height:187px;
     margin-right:6px;
     background-repeat:repeat-y;
 }

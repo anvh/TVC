@@ -196,7 +196,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td width='13px' align='right'>
                     <div class="footer_bg_left_bottom"></div>
                 </td>
                 <td align="center" colspan="0" bgcolor="#9d2a0f" height="50">
@@ -221,12 +221,12 @@
                     
                     
                 </td>
-                <td>
+                <td >
                     <div class="footer_bg_right_bottom"></div>
                 </td>
             </tr>
             <tr>
-                <td width="1%">
+                <td width='13px' align='right'>
                     <div class="footer_bg_left"></div>
                 </td>
                 <td width="98%" align="center">
