@@ -54,31 +54,31 @@
                         <table align="center" cellpadding="0" cellspacing="0" border="0" style="padding-top: 20px">
                             <tr>
                                 <td>
-                                    <a href="Default.aspx" target="_blank">Trang Chủ</a>
+                                    <a id="default" href="Default.aspx" target="_blank" class='menu_i'>Trang Chủ</a>
                                 </td>
                                 <td width="60px" align="center">
                                     &nbsp;
                                 </td>
                                 <td>
-                                    <a href="Services.aspx" target="_blank">Dịch Vụ</a>
+                                    <a id="service" href="Services.aspx" target="_blank" class='menu_i'>Dịch Vụ</a>
                                 </td>
                                 <td width="60px" align="center">
                                     &nbsp;
                                 </td>
                                 <td>
-                                    <a href="List.aspx" target="_blank">Tin Tức</a>
+                                    <a id="list" href="List.aspx" target="_blank" class='menu_i'>Tin Tức</a>
                                 </td>
                                 <td width="60px" align="center">
                                     &nbsp;
                                 </td>
                                 <td>
-                                    <a href="ImagesLibrary.aspx" target="_blank">Thư Viện</a>
+                                    <a id="image_library" href="ImagesLibrary.aspx" target="_blank" class='menu_i'>Thư Viện</a>
                                 </td>
                                 <td width="60px" align="center">
                                     &nbsp;
                                 </td>
                                 <td>
-                                    <a href="Contact.aspx" target="_blank">Liên Hệ</a>
+                                    <a id="contact" href="Contact.aspx" target="_blank" class='menu_i'>Liên Hệ</a>
                                 </td>
                             </tr>
                         </table>
@@ -254,14 +254,14 @@
     <script type="text/javascript">
 
         $(document).ready(function () {
-
+            setFocusCurrentPage();
             MainContentW = 1000;
             LeftBannerW = 15;
             RightBannerW = 15;
             LeftAdjust = 5;
             RightAdjust = 5;
             TopAdjust = $(window).height() / 2 - 90;
-            
+
             function FloatTopDiv() {
                 startLX = 0, startLY = TopAdjust;
                 var d = document;
@@ -280,8 +280,8 @@
                         var pY = document.body.scrollTop;
                     startLY = TopAdjust; startRY = TopAdjust;
                     ftlObj2.y += (pY + startLY - ftlObj2.y) / 16;
-                    ftlObj2.sP(ftlObj2.x, ftlObj2.y-30);
-                    
+                    ftlObj2.sP(ftlObj2.x, ftlObj2.y - 30);
+
                     setTimeout("stayTopLeft()", 1);
                 }
 
@@ -352,6 +352,32 @@
         savedirection: true,
         random: true
     });
+    function setFocusCurrentPage(){
+        var url = document.location.href;
+        if(url.indexOf("Default.aspx") != -1){
+            $('#default')[0].style.color = '#FF7F50';
+        }
+        if (url.indexOf("Services.aspx") != -1) {
+            $('#service')[0].style.color = '#FF7F50';
+        }
+        if (url.indexOf("List.aspx") != -1) {
+            $('#list')[0].style.color = '#FF7F50';
+        }
+        if (url.indexOf("ImagesLibrary.aspx") != -1) {
+            $('#image_library')[0].style.color = '#FF7F50';
+        }
+        if (url.indexOf("Contact.aspx") != -1) {
+            $('#contact')[0].style.color = '#FF7F50';
+        }
+        $('.menu_i').each(function () {
+            $(this).mouseover(function () {
+                if (this.style.color) this.style.color = 'orange';
+            });
+            $(this).mouseout(function () {
+                if (this.style.color) this.style.color = '#FF7F50';
+            });
+        });
+    }
     </script>
 
 </body>
