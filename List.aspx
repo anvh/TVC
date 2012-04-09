@@ -36,7 +36,7 @@ Tin mới
                             </td>
                             <td width="10px"></td>
                             <td height="6px" valign="top" style="font-size:13pt;font-weight:bold;">
-                                 <a target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;">
+                                 <a onMouseOver="this.style.color='#FFA500'" onMouseOut="this.style.color='#000000'" target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;">
                                     <%# Server.HtmlDecode(Eval("Title") as string) %>
                                 </a>
                             </td>
@@ -53,7 +53,7 @@ Tin mới
                         <tr>
                             <td></td>
                             <td valign="bottom" align=right>
-                                <div onMouseOver="this.style.color='#FFA500'" onMouseOut="this.style.color='#000000'" style='margin-top:-5px;margin-bottom:-5px;'>...  <a target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;"> Chi tiết</a></div>
+                                <div style='margin-top:-5px;margin-bottom:-5px;'>...  <a onMouseOver="this.style.color='#FFA500'" onMouseOut="this.style.color='#000000'" target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;"> Chi tiết</a></div>
                                 <hr/>
                             </td>
                         </tr>
@@ -67,7 +67,7 @@ Tin mới
     <FooterTemplate>
         <tr>
             <td colspan='2' align='right' style='font-weight:bold'>
-                <a href="List.aspx" target="_blank" style='color:black'> Các tin khác >> </a>
+                <a onMouseOver="this.style.color='#FFA500'" onMouseOut="this.style.color='#000000'" href="List.aspx" target="_blank" style='color:black'> Các tin khác >> </a>
             </td>
         </tr>
     </FooterTemplate>
