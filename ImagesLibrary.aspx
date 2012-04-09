@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="Styles/images-library.css" type="text/css"/>
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/Main.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" media="all" />
 
     <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
-    <link href="Styles/style.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="Scripts/jquery.betterTooltip.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="Scripts/slides.min.jquery.js"></script>
@@ -190,26 +190,53 @@
 </table>
 	
     <!-- Footer ----------------------------------------------------------------------------------------------------------->
-        <table width="100%">
+        <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
             <tr align="center">
-                
-            </tr>
-            <tr>
-                <td align="center" colspan="3" bgcolor="#88250e" style='color:White;' height="50">
-                <div class="footer_bg">
-                        <div class="footer">
-                            Bản quyền © 2012 Công ty TNHH TM-DV xây dựng vận tải Thiên Việt. Công ty THIÊN VIỆT - Đ/C: Z11, QL 1A, Block 2, P. Trung Mỹ Tây, Q.12, Tp. Hồ Chí Minh, Việt Nam.
-                            ĐT: (+84)8 - 66 847 867, (+84)933 899 611, (+84)909 494 201<br/>
-                            Website: <a href="vanchuyenhang.com.vn" target="_blank">vanchuyenhang.com.vn</a>  
-                                     <a href="www.vanchuyenhanghoa.com.vn" target="_blank">www.vanchuyenhanghoa.com.vn</a><br/>
-                            Email: Thienvietltd@gmail.com</br>
-                         </div>
-                         <div class="designer">
-                            <a href="#"><i>Designed by: AnVH - LamPV</i></a>
-                         </div>
-                     </div>
+                <td colspan="3" height="7" bgcolor="black">
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <div class="footer_bg_left_bottom"></div>
+                </td>
+                <td align="center" colspan="0" bgcolor="#88250e" height="50">
+                    <div class="footer">
+                        <span style="color: #000000; font-weight: bold">CÔNG TY TNHH TM - DV XÂY DỰNG VẬN TẢI
+                            THIÊN VIỆT</span><br />
+                            <span class="footer_hr"></span>
+                        Z11 Quốc lộ 1A, Khu phố 2, P. Trung Mỹ Tây, Quận 12, Tp. Hồ Chí Minh, Việt Nam.<br />
+                        <span class="footer_label">ĐT:</span> (+84) 8 - 66 847 867 - <span class="footer_label">
+                            Fax:</span> (+84) 8 - 6250 1912<br />
+                        <span class="footer_label">Email:</span> phongkinhdoanh@vanchuyenhang.com.vn &nbsp;&nbsp;&nbsp;<span
+                            style="color: #000000; font-weight: bold">Hotline:</span> 0976 585 121 - 0933
+                        397 204<br />
+                        <span class="footer_label">Website:</span> <a href="vanchuyenhang.com.vn" target="_blank">
+                            vanchuyenhang.com.vn</a> - <a href="www.vanchuyenhanghoa.com.vn" target="_blank">www.vanchuyenhanghoa.com.vn</a><br />
+                        <br />
+                        <span style="color: #000000; font-size: 9px">Bản quyền © 2012 thuộc TVC Transportation</span>
+                    </div>
+                    <div class="designer">
+                        <a href="#"><i>Designed by: AnVH - LamPV</i></a>
+                    </div>
+                    
+                    
+                </td>
+                <td>
+                    <div class="footer_bg_right_bottom"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="1%">
+                    <div class="footer_bg_left"></div>
+                </td>
+                <td width="98%" align="center">
+                    <div class="footer_bg"></div>
+                </td>
+                <td>
+                    <div class="footer_bg_right"></div>
+                </td>
+            </tr>
+            
         </table>
         <!-- side banner ----------------------------------------------------------------------------------------->
         <div class='banner_side' id='banner_side'>

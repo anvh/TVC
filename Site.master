@@ -140,7 +140,7 @@
                 </td>
                 <td class="company_info" width="600">
                     <div class='footer_t'></div>
-                    <div style='background-color: White; padding: 20px;border-radius:10px 10px 0px 0px;border:2px solid #acb6ba;border-bottom:0px'>
+                    <div style='background-color: White; padding: 40px;border-radius:10px;border:2px solid #acb6ba'>
                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
                     </div>
                     <div class="footer_s"></div>
@@ -189,25 +189,54 @@
         </table>
 
         <!-- Footer ---------------------------------------------------------------------------------------------------->
-        <table width="100%">
+        <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
             <tr align="center">
-                <td colspan="3" height="1" bgcolor="black">
+                <td colspan="3" height="4" bgcolor="black">
                 </td>
             </tr>
             <tr>
-                <td align="center" colspan="3" bgcolor="#88250e" height="50">
-                    <div class="footer_bg">
-                        <div class="footer" id='footer'>
-                            Bản quyền © 2012 Công ty TNHH TM-DV xây dựng vận tải Thiên Việt. Công ty THIÊN VIỆT - Đ/C: Z11, QL 1A, Block 2, P. Trung Mỹ Tây, Q.12, Tp. Hồ Chí Minh, Việt Nam.
-                            ĐT: (+84)8 - 66 847 867, (+84)933 899 611, (+84)909 494 201<br/>
-                            Website: <a href="vanchuyenhang.com.vn" target="_blank">vanchuyenhang.com.vn</a>  
-                                     <a href="www.vanchuyenhanghoa.com.vn" target="_blank">www.vanchuyenhanghoa.com.vn</a><br/>
-                            Email: Thienvietltd@gmail.com</br>
-                         </div>
-                         <div class="designer">
-                            <a href="#"><i>Designed by: AnVH - LamPV</i></a>
-                         </div>
-                     </div>
+                <td>
+                    <div class="footer_bg_left_bottom"></div>
+                </td>
+                <td align="center" colspan="0" bgcolor="#9d2a0f" height="50">
+                    <div class="footer">
+                        <span style="color: #000000; font-weight: bold">CÔNG TY TNHH TM - DV XÂY DỰNG VẬN TẢI
+                            THIÊN VIỆT</span><br />
+                        <span class="footer_hr"></span>
+                        Z11 Quốc lộ 1A, Khu phố 2, P. Trung Mỹ Tây, Quận 12, Tp. Hồ Chí Minh, Việt Nam.<br />
+                        <span class="footer_label">ĐT:</span> (+84) 8 - 66 847 867 - <span class="footer_label">
+                            Fax:</span> (+84) 8 - 6250 1912<br />
+                        <span class="footer_label">Email:</span> phongkinhdoanh@vanchuyenhang.com.vn &nbsp;&nbsp;&nbsp;<span
+                            style="color: #000000; font-weight: bold">Hotline:</span> 0976 585 121 - 0933
+                        397 204<br />
+                        <span class="footer_label">Website:</span> <a href="vanchuyenhang.com.vn" target="_blank">
+                            vanchuyenhang.com.vn</a> - <a href="www.vanchuyenhanghoa.com.vn" target="_blank">www.vanchuyenhanghoa.com.vn</a><br />
+                        <br />
+                        <span style="color: #000000; font-size: 9px">Bản quyền © 2012 thuộc TVC Transportation</span>
+                    </div>
+                    <div class="designer">
+                        <a href="#"><i>Designed by: AnVH - LamPV</i></a>
+                    </div>
+                    
+                    
+                </td>
+                <td>
+                    <div class="footer_bg_right_bottom"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="1%">
+                    <div class="footer_bg_left"></div>
+                </td>
+                <td width="98%" align="center">
+                    <div class="footer_bg"></div>
+                </td>
+                <td>
+                    <div class="footer_bg_right"></div>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="3" height="20" bgcolor="black">
                 </td>
             </tr>
         </table>
@@ -215,61 +244,6 @@
 
     
         <!-- side banner ----------------------------------------------------------------------------------------->
-        <div class='banner_side' id='banner_side'>
-        <div class="addthis_toolbox addthis_default_style addthis_32x32_style" style='text-align:center;'>
-               <table cellspacing="0" cellpadding="0" border="0" width='100%'>
-                    <tr align='center' height='36px'>
-                        <td nowrap="nowrap" valign="top" align='center'>
-                            <div style='text-align:center; width='100%''>
-                               <!-- AddThis Button BEGIN -->
-                                <a class="addthis_button_preferred_1"></a>
-                            </div>
-                            <br/>
-                        </td>
-                    </tr>
-                    
-                    <tr align='center' height='36px'> 
-                        <td nowrap="nowrap" valign="top" align='center'>
-                           <!-- AddThis Button BEGIN -->
-                            <div style='text-align:center; width='100%''>
-                                <a class="addthis_button_preferred_2"></a>
-                            </div>
-                             </br>
-                        </td>
-                    </tr>
-                    <tr align='center' height='36px'>
-                        <td nowrap="nowrap" valign="top" align='center'>
-                             <div style='text-align:center; width='100%''>
-                                <!-- AddThis Button BEGIN -->
-                                <a class="addthis_button_compact"></a>
-                            </div>
-                            </br>
-                        </td>
-                    </tr>
-                    <tr>
-                    <td>
-                        <hr/>
-                        <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
-                        <a href="skype:thienvietcompany?call" target="_blank">
-                            <img src="http://download.skype.com/share/skypebuttons/buttons/call_blue_transparent_34x34.png" style="border: none;" width="34" height="34" alt="Skype Me™!" />
-                        </a>
-                        <!-- <a href="mailto:?subject=">
-                            <img height="27" border="0" width="27" src="images/mail.gif"/>
-                        </a>
-                        -->
-                        
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                        <a href='ymsgr:sendIM?nangsantruong_199' target="_blank">
-                            <img alt='' height="20" border="0" width="20" border=0 src='http://opi.yahoo.com/online?u=nangsantruong_199&m=g&t=5' /> 
-                        </a>
-                    </td>
-                  </tr>
-                </table>
-            </div>
-        </div>
         
         <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f6ec4fe1d4c7b05"></script>
         <!-- AddThis Button END -->

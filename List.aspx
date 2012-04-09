@@ -53,7 +53,7 @@ Tin mới
                         <tr>
                             <td></td>
                             <td valign="bottom" align=right>
-                                <div style='margin-top:-5px;margin-bottom:-5px;'>...    <a target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;"> Chi tiết</a></div>
+                                <div onMouseOver="this.style.color='#FFA500'" onMouseOut="this.style.color='#000000'" style='margin-top:-5px;margin-bottom:-5px;'>...  <a target="_blank" href="<%# Extract.format(Server.HtmlDecode(Eval("Title") as string))%>-<%# Eval("id")%>-new.aspx" style="color:Black;"> Chi tiết</a></div>
                                 <hr/>
                             </td>
                         </tr>
