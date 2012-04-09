@@ -194,18 +194,18 @@
     <!-- Footer ----------------------------------------------------------------------------------------------------------->
         <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
             <tr align="center">
-                <td colspan="3" height="7" bgcolor="black">
+                <td colspan="3" height="4" bgcolor="black">
                 </td>
             </tr>
             <tr>
-                <td>
+                <td width='13px' align='right'>
                     <div class="footer_bg_left_bottom"></div>
                 </td>
-                <td align="center" colspan="0" bgcolor="#88250e" height="50">
+                <td align="center" colspan="0" bgcolor="#9d2a0f" height="50">
                     <div class="footer">
                         <span style="color: #000000; font-weight: bold">CÔNG TY TNHH TM - DV XÂY DỰNG VẬN TẢI
                             THIÊN VIỆT</span><br />
-                            <span class="footer_hr"></span>
+                        <span class="footer_hr"></span>
                         Z11 Quốc lộ 1A, Khu phố 2, P. Trung Mỹ Tây, Quận 12, Tp. Hồ Chí Minh, Việt Nam.<br />
                         <span class="footer_label">ĐT:</span> (+84) 8 - 66 847 867 - <span class="footer_label">
                             Fax:</span> (+84) 8 - 6250 1912<br />
@@ -223,12 +223,12 @@
                     
                     
                 </td>
-                <td>
+                <td >
                     <div class="footer_bg_right_bottom"></div>
                 </td>
             </tr>
             <tr>
-                <td width="1%">
+                <td width='13px' align='right'>
                     <div class="footer_bg_left"></div>
                 </td>
                 <td width="98%" align="center">
@@ -238,7 +238,10 @@
                     <div class="footer_bg_right"></div>
                 </td>
             </tr>
-            
+            <tr align="center">
+                <td colspan="3" height="2" bgcolor="black">
+                </td>
+            </tr>
         </table>
         <!-- side banner ----------------------------------------------------------------------------------------->
         <div class='banner_side' id='banner_side'>

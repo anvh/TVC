@@ -245,7 +245,61 @@
 
     
         <!-- side banner ----------------------------------------------------------------------------------------->
-        
+        <div class='banner_side' id='banner_side'>
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style" style='text-align:center;'>
+               <table cellspacing="0" cellpadding="0" border="0" width='100%'>
+                    <tr align='center' height='36px'>
+                        <td nowrap="nowrap" valign="top" align='center'>
+                            <div style='text-align:center; width='100%''>
+                               <!-- AddThis Button BEGIN -->
+                                <a class="addthis_button_preferred_1"></a>
+                            </div>
+                            <br/>
+                        </td>
+                    </tr>
+                    
+                    <tr align='center' height='36px'> 
+                        <td nowrap="nowrap" valign="top" align='center'>
+                           <!-- AddThis Button BEGIN -->
+                            <div style='text-align:center; width='100%''>
+                                <a class="addthis_button_preferred_2"></a>
+                            </div>
+                             </br>
+                        </td>
+                    </tr>
+                    <tr align='center' height='36px'>
+                        <td nowrap="nowrap" valign="top" align='center'>
+                             <div style='text-align:center; width='100%''>
+                                <!-- AddThis Button BEGIN -->
+                                <a class="addthis_button_compact"></a>
+                            </div>
+                            </br>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <hr/>
+                        <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+                        <a href="skype:thienvietcompany?call" target="_blank">
+                            <img src="http://download.skype.com/share/skypebuttons/buttons/call_blue_transparent_34x34.png" style="border: none;" width="34" height="34" alt="Skype Me™!" />
+                        </a>
+                        <!-- <a href="mailto:?subject=">
+                            <img height="27" border="0" width="27" src="images/mail.gif"/>
+                        </a>
+                        -->
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <a href='ymsgr:sendIM?nangsantruong_199' target="_blank">
+                            <img alt='' height="20" border="0" width="20" border=0 src='http://opi.yahoo.com/online?u=nangsantruong_199&m=g&t=5' /> 
+                        </a>
+                    </td>
+                  </tr>
+                </table>
+            </div>
+        </div>
         <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f6ec4fe1d4c7b05"></script>
         <!-- AddThis Button END -->
 
