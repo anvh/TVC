@@ -210,8 +210,8 @@ a{
 {
     background: url("../Images/gradient_alt2.gif") repeat-x scroll left top #E7E9EF;
     border-bottom: 1px solid #849F9A;
-    border-left: 1px solid #849F9A;
-    border-right: 1px solid #849F9A;
+    border-left: 2px solid #849F9A;
+    border-right: 2px solid #849F9A;
     height: 63px;
     border-radius: 0px 0px 20px 20px;
 }

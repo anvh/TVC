@@ -112,7 +112,9 @@
     <tr>
                 <td align="center" colspan="3" class="style1">
                     <div style="margin-bottom: 50px; margin-top: 50px">
-                        <img src="Images/Logo.png" alt="logo" width="550" />
+                        <a href="Default.aspx" target="_blank">
+                            <img src="Images/Logo.png" alt="logo" width="550" />
+                        </a>
                     </div>
                 </td>
             </tr>

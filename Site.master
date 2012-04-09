@@ -93,7 +93,9 @@
             <tr>
                 <td align="center" colspan="3" class="style1">
                     <div style="margin-bottom: 50px; margin-top: 50px">
-                        <img src="Images/Logo.png" alt="logo" width="550" />
+                        <a href="Default.aspx" target="_blank">
+                            <img src="Images/Logo.png" alt="logo" width="550" />
+                        </a>
                     </div>
                 </td>
             </tr>
@@ -139,8 +141,7 @@
                 <td>
                 </td>
                 <td class="company_info" width="600">
-                    <div class='footer_t'></div>
-                    <div style='background-color: White; padding: 40px;border-radius:10px;border:2px solid #acb6ba'>
+                    <div style='background-color: White; padding: 40px;border-radius:10px 10px 0px 0px;border:2px solid #acb6ba;border-bottom:0px'>
                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
                     </div>
                     <div class="footer_s"></div>
